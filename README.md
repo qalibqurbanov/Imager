@@ -1,7 +1,6 @@
-# Imager
-
-
 # <p align="center">Imager</p>
+
+
 <p align="center">Upload your images to popular image hosting sites and share with your friends.</p>
 <br/> <img alt="AppScreenshot" src="https://i.ibb.co/r0YPcjm/Screenshot-1.png" width="100%"/> 
 
@@ -14,7 +13,7 @@
 **Libraries:**
 | Name | URL     |
 | :-------- | :------- |
-| `HtmlAgilityPack` | [https://www.nuget.org/packages/newtonsoft.json](https://www.nuget.org/packages/newtonsoft.json) |
+| `Newtonsoft.Json` | [https://www.nuget.org/packages/newtonsoft.json](https://www.nuget.org/packages/newtonsoft.json) |
 | `MaterialSkin.2` | [https://www.nuget.org/packages/MaterialSkin.2](https://www.nuget.org/packages/MaterialSkin.2) |
 
 
