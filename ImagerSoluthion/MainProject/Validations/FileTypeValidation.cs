@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace MainForm.Helpers
+namespace MainForm.Validations
 {
     public static class FileTypeValidation
     {

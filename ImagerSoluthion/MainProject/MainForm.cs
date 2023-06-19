@@ -70,19 +70,19 @@ namespace MainForm
             {
                 foreach (string file in droppedFiles) /* Drop olunan fayllari Drop olunmuw fayl kimi elde et */
                 {
-                    if (Helpers.FileTypeValidation.CheckFileExtension(file, true))
+                    if (Validations.FileTypeValidation.CheckFileExtension(file, true))
                     {
                         /* Panele fayl evezine icerisinde fayllar olan papka suruklense, proqramimiz tekce papkani suruklenmiw fayl kimi qebul edecek, ancaq bize lazimdirki papka suruklense icerisindeki fayllari qebul etsin: */
                         if (Directory.Exists(file)) /* Eger fayl papka kimi movcuddursa */
                         {
                             foreach (string innerFile in Directory.GetFiles(file, "*.*", SearchOption.AllDirectories)) /* Suruklenib buraxilan butun papkalarinda icindeki papkalarda yerlewen fayllari elde edirik */
                             {
-                                if (Helpers.FileTypeValidation.CheckFileExtension(innerFile, false)) /* Icerideki fayl bize lazim olan extensiona sahibdirse */
+                                if (Validations.FileTypeValidation.CheckFileExtension(innerFile, false)) /* Icerideki fayl bize lazim olan extensiona sahibdirse */
                                 {
                                     Paths.Add(innerFile); /* Suruklenen papkadaki faylin yolunu elave et kolleksiyaya */
                                     ++faylSayi;
                                 }
-                                else if (!Helpers.FileTypeValidation.CheckFileExtension(innerFile, false)) /* Icerideki fayl bize lazim olan extensiona sahib deyilse */
+                                else if (!Validations.FileTypeValidation.CheckFileExtension(innerFile, false)) /* Icerideki fayl bize lazim olan extensiona sahib deyilse */
                                 {
                                     UnsupportedFiles += $"{innerFile}\n";
                                 }

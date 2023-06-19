@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
-using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace MainForm.Helpers
 {
@@ -34,13 +34,6 @@ namespace MainForm.Helpers
 						JObject jsonObject = JObject.Parse(ResponseJsonContent);
 						LinksToUploadedImages.Add(jsonObject.SelectToken("data.url").ToString());
 					}
-
-					///* ikinci parametre true vererek deyirikki 'log.txt' evvelceden variydisa yeniden yazma elave et uzerine false deseydik evvelkini yazilari silecekdi indi yazdiqlarimizi yazacaydi ora */
-					//using (StreamWriter writeResponse = new StreamWriter($"{Environment.CurrentDirectory}\\responseJSON.txt", true))
-					//{
-					//	writeResponse.WriteLine(responseJsonContent);
-					//	writeResponse.Flush();
-					//}
 				}
                 catch { }
 			}

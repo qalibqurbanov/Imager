@@ -84,7 +84,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\FileTypeValidation.cs" />
+    <Compile Include="Validations\FileTypeValidation.cs" />
     <Compile Include="Helpers\UploadImage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
